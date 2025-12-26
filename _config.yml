@@ -21,12 +21,12 @@ people:
   pic: ngocnt
   position: Co-Founder/Owner
   social:
+    - title: github
+      url: https://github.com/tanngoc93
     - title: linkedin
       url: www.linkedin.com/in/tanngoc93
-    - title: twitter
-      url: https://x.com/tanngoc93
     - title: facebook
-      url: https://www.facebook.com/profile.php?id=100055072756583
+      url: https://www.facebook.com/ngoc.nguyen.tan.551979
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
