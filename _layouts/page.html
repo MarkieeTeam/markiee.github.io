@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="page-top" class="page">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a
+            class="navbar-brand"
+            href="{{ "/" | prepend: site.baseurl }}"
+            style="text-transform: uppercase;font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: 700;"
+          >
+            {{ site.title }}
+          </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="{{ "/" | prepend: site.baseurl }}">Back to Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light-gray" style="padding-top: 140px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>{{ page.title }}</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>
