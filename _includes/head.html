@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#111827">
+  <meta name="theme-color" content="#17223b">
 
   {% assign page_title = page.title | default: site.title %}
   {% assign page_description = page.description | default: site.description %}
@@ -44,6 +44,7 @@
       "addressCountry": {{ site.address.country | jsonify }}
     },
     "sameAs": [
+      {{ site.social.facebook | jsonify }},
       {{ site.social.linkedin | jsonify }},
       {{ site.founder.github | jsonify }},
       {{ site.founder.linkedin | jsonify }}
