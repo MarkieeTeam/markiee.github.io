@@ -1,26 +1,16 @@
-FROM ruby:2.7.6
+FROM ruby:3.2.9
 
-ENV APP_DIR=/app
+ENV APP_DIR=/app \
+    BUNDLE_JOBS=4 \
+    BUNDLE_RETRY=3
 
-RUN apt-get update -qq
+WORKDIR ${APP_DIR}
 
-RUN mkdir -p $APP_DIR
+COPY Gemfile Gemfile.lock ./
+RUN gem install bundler:2.3.16 && bundle install
 
-COPY Gemfile      $APP_DIR/Gemfile
-COPY Gemfile.lock $APP_DIR/Gemfile.lock
+COPY . .
 
-WORKDIR $APP_DIR
+EXPOSE 4000 35729
 
-# Upgrade RubyGems and install latest Bundler
-RUN gem update --system && \
-    gem install bundler && bundle install
-
-COPY . $APP_DIR/
-
-# Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-#
-EXPOSE 4000
-
-CMD ["bundle", "exec", "jekyll", "serve"]
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--force_polling"]

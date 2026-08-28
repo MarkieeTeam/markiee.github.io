@@ -1,21 +1,14 @@
-version: "3.9"
-
-networks:
-  local-network:
-    driver: bridge
-
 services:
   web:
-    tty: true
-    stdin_open: true
     build: .
+    init: true
     working_dir: /app
     volumes:
       - .:/app
-    environment:
-      PORT: 4000
-    command: bundle exec jekyll serve
+      - bundle_cache:/usr/local/bundle
     ports:
       - "4000:4000"
-    networks:
-      - local-network
+      - "35729:35729"
+
+volumes:
+  bundle_cache:

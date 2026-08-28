@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218 48" role="img" aria-labelledby="title">
+  <title id="title">Markiee</title>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="48" rx="14" fill="#111827"/>
+    <path d="M11.5 33.5V14.8l12.4 12.4 12.6-12.4v18.7" stroke="#F9733D" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 15v12" stroke="#FFF7ED" stroke-width="5.4" stroke-linecap="round"/>
+    <path d="M66 34V14h5.9l6.9 11.4L85.7 14h5.9v20h-5.4V22.4l-5.6 9.1H77l-5.6-9.1V34H66Zm31.4 0 8.4-20h5.4l8.4 20h-5.9l-1.4-3.5h-7.9L103 34h-5.6Zm8.7-8h4.5l-2.2-5.7-2.3 5.7Zm19.3 8V14h9.4c5.4 0 8.5 2.8 8.5 7 0 2.7-1.4 4.8-3.9 6l4.8 7h-6.4l-4-5.9h-2.9V34h-5.5Zm5.5-10.5h3.6c2.2 0 3.3-.8 3.3-2.4 0-1.7-1.1-2.5-3.3-2.5h-3.6v4.9ZM150 34V14h5.5v7.9l7.2-7.9h6.7l-8.2 9 8.7 11h-6.8l-5.7-7.2-1.9 2V34H150Zm25.3 0V14H191v4.7h-10.2v3h9.3v4.4h-9.3v3.2h10.6V34h-16.1Zm22.2 0V14h5.5v20h-5.5Zm11 0V14h5.5v20h-5.5Z" fill="#111827" fill-rule="nonzero"/>
+  </g>
+</svg>

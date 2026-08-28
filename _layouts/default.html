@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="{{ site.language | default: 'en' }}">
   {% include head.html %}
-
-
-    <body id="page-top" class="index">
-
+  <body class="{{ page.body_class | default: 'site-page' }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     {% include header.html %}
-    {% include services.html %}
-    {% include portfolio_grid.html %}
-    {% include about.html %}
-    {% include team.html %}
-    {% include clients.html %}
-    {% include contact.html %}
-    {% include footer.html %}
-    {% include modals.html %}
-    {% include js.html %}
 
-    </body>
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
 </html>

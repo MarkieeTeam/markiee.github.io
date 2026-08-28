@@ -1,30 +1,27 @@
-Agency Jekyll theme
-====================
+# Markiee corporate site
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+Corporate homepage for [markiee.co](https://markiee.co), published from this repository with GitHub Pages.
 
-# How to use
+## Local development
 
-###Portfolio 
+```bash
+docker compose up --build
+```
 
-Portfolio projects are in '/_posts'
+Open [http://localhost:4000](http://localhost:4000). Jekyll live reload is available on port `35729`.
 
-Images are in '/img/portfolio'
+## Site structure
 
-###About
+- `index.html` — corporate homepage
+- `_layouts/` — shared page shells
+- `_includes/` — metadata, navigation, footer, and JavaScript
+- `style.css` — complete responsive visual system
+- `assets/brand/` — Markiee SVG wordmark and favicon
+- `privacy-policy.md`, `terms-of-use.md` — legal pages
+- `CNAME` — custom GitHub Pages domain
 
-Images are in '/img/about/'
+## Publishing
 
-###Team
+GitHub Pages publishes the repository root on `main`. Keep `CNAME` set to `markiee.co`.
 
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
-
-
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+The workspace policy requires Git history and remote updates to be performed by the repository owner.

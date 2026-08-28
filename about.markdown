@@ -1,18 +1,26 @@
 ---
 layout: page
-title: About
+title: About Markiee
+description: A U.S.–Vietnam company building commerce brands, practical software and growth systems across borders.
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+**Markiee LLC was established in the United States in 2021 and operates with a five-person core team across the United States and Vietnam.**
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+We build and operate cross-border ecommerce brands, develop practical SaaS products, and lead brand and marketing programs for North America and Australia. Our next chapter is focused on deeper product, talent, and market capability in Vietnam.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Our operating model
 
+Markiee brings engineering, ecommerce operations, product development, brand, lifecycle marketing, and advertising into one small team. We use the systems we build in our own businesses, which keeps the work grounded in real customer and operating feedback.
 
-[jekyll-organization]: https://github.com/jekyll
+## Selected work
+
+- **All Love Here** — personalized jewelry, message cards, and meaningful gifting products.
+- **FeedX** — a family of commerce software products for Shopify merchants, including social automation and merchandising tools.
+- **Vietnam product development** — handmade gifting products and Vietnam-origin food categories prepared for international commerce requirements.
+
+## Founder
+
+Ngoc Nguyen is Markiee's Co-Founder and Owner and the founder of FeedX. He is a software builder and commerce operator working across SaaS, cloud infrastructure, AI automation, ecommerce, and growth.
+
+[Meet us on the homepage]({{ '/#about' | relative_url }}) or email [{{ site.email }}](mailto:{{ site.email }}).

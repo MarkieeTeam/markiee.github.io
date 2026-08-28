@@ -1,30 +1,53 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#111827">
 
+  {% assign page_title = page.title | default: site.title %}
+  {% assign page_description = page.description | default: site.description %}
+  {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
 
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+  <title>{% if page.title %}{{ page_title }} · {{ site.title }}{% else %}{{ site.title }} — Commerce, software and growth across borders{% endif %}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <link rel="canonical" href="{{ canonical_url }}">
 
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta name="twitter:card" content="summary">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link rel="icon" href="{{ '/assets/brand/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <script>document.documentElement.classList.add("has-js")</script>
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 
-    <!-- https://github.com/joshbuchea/HEAD -->
-    <link rel="icon" href="{{ "/favicon.png" | absolute_url }}" type="image/png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ site.legal_name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "logo": {{ '/assets/brand/markiee-logo.svg' | absolute_url | jsonify }},
+    "email": {{ site.email | jsonify }},
+    "founder": {
+      "@type": "Person",
+      "name": {{ site.founder.name | jsonify }}
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": {{ site.address.street | jsonify }},
+      "addressLocality": {{ site.address.locality | jsonify }},
+      "addressRegion": {{ site.address.region | jsonify }},
+      "postalCode": {{ site.address.postal_code | jsonify }},
+      "addressCountry": {{ site.address.country | jsonify }}
+    },
+    "sameAs": [
+      {{ site.social.linkedin | jsonify }},
+      {{ site.founder.github | jsonify }},
+      {{ site.founder.linkedin | jsonify }}
+    ]
+  }
+  </script>
 </head>

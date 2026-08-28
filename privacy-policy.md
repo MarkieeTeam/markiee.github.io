@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: How Markiee handles information submitted through this website and business communications.
 permalink: /privacy-policy/
 ---
 

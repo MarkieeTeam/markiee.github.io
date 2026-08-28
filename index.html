@@ -1,20 +1,275 @@
 ---
 layout: default
+body_class: home-page
+description: "Markiee is a U.S.–Vietnam commerce and software company building ecommerce brands, SaaS products, and growth systems for North America and Australia."
 ---
 
-<div class="home">
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+  <div class="shell hero__grid">
+    <div class="hero__copy" data-reveal>
+      <span class="eyebrow eyebrow--light"><i aria-hidden="true"></i> U.S. founded · Vietnam powered</span>
+      <h1 id="hero-heading">We build commerce <em>brands</em> and software that cross borders.</h1>
+      <p>Markiee is a lean operating company connecting product development, ecommerce, software, brand and marketing execution across North America and Australia—with Vietnam as our next growth market.</p>
+      <div class="hero__actions">
+        <a class="button button--accent" href="#ventures">Explore our work <span aria-hidden="true">↓</span></a>
+        <a class="button button--ghost" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero__principles" aria-label="How Markiee operates">
+        <span><b>01</b> Build</span>
+        <span><b>02</b> Operate</span>
+        <span><b>03</b> Scale</span>
+      </div>
+    </div>
 
-  <h1>Posts</h1>
+    <div class="hero-console" data-reveal>
+      <div class="hero-console__top">
+        <div><span class="status-dot" aria-hidden="true"></span> Live operating view</div>
+        <span>MARKIEE / 2026</span>
+      </div>
+      <div class="route-map" aria-label="Markiee operates between Vietnam, North America, and Australia">
+        <svg viewBox="0 0 600 330" role="presentation" aria-hidden="true">
+          <defs>
+            <linearGradient id="routeGradient" x1="0" x2="1">
+              <stop stop-color="#f9733d"/>
+              <stop offset="1" stop-color="#c7f36b"/>
+            </linearGradient>
+          </defs>
+          <path class="route-map__grid" d="M0 55h600M0 110h600M0 165h600M0 220h600M0 275h600M100 0v330M200 0v330M300 0v330M400 0v330M500 0v330"/>
+          <path class="route-map__line" d="M420 178C350 72 190 70 110 130M420 178c36 48 43 85 70 110"/>
+          <circle class="route-map__pulse" cx="420" cy="178" r="18"/>
+          <circle cx="420" cy="178" r="7" fill="url(#routeGradient)"/>
+          <circle cx="110" cy="130" r="7" fill="#fff7ed"/>
+          <circle cx="490" cy="288" r="7" fill="#c7f36b"/>
+        </svg>
+        <span class="route-node route-node--north-america"><b>North America</b><small>Commerce operations</small></span>
+        <span class="route-node route-node--vietnam"><b>Vietnam</b><small>Product & engineering</small></span>
+        <span class="route-node route-node--australia"><b>Australia</b><small>Active market</small></span>
+      </div>
+      <div class="hero-console__bottom">
+        <div><span>Operating model</span><strong>Commerce × Software × Growth</strong></div>
+        <div class="console-team"><span aria-hidden="true">M</span><span aria-hidden="true">K</span><span aria-hidden="true">+</span><b>5-person core team</b></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="proof-strip" aria-label="Markiee at a glance">
+  <div class="shell proof-grid">
+    <div data-reveal><strong>$1.5M+</strong><span>Annual portfolio revenue</span></div>
+    <div data-reveal><strong>5</strong><span>Core team members</span></div>
+    <div data-reveal><strong>2</strong><span>Established global markets</span></div>
+    <div data-reveal><strong>VN</strong><span>Next growth chapter</span></div>
+  </div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section class="section services" id="services">
+  <div class="shell">
+    <header class="section-heading section-heading--split" data-reveal>
+      <div><span class="eyebrow">What we do</span><h2>One team for the whole commerce loop.</h2></div>
+      <p>We combine the disciplines that are usually split across agencies, operators and software vendors—because we use the same systems in our own businesses.</p>
+    </header>
 
-</div>
+    <div class="service-grid">
+      <article class="service-card service-card--wide" data-reveal>
+        <div class="service-card__number">01</div>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 15h32v23H8zM14 15V9h20v6M8 23h32M18 29h12"/></svg>
+        </div>
+        <div><h3>Cross-border ecommerce</h3><p>Storefront, marketplace and fulfillment operations across Shopify, Amazon and Wayfair—from catalog readiness to day-to-day execution.</p></div>
+        <span class="service-card__tag">Websites · marketplaces · operations</span>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__number">02</div>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M9 11h30v23H9zM17 41h14M24 34v7M15 20l6 6-6 6M26 32h8"/></svg>
+        </div>
+        <div><h3>SaaS & enterprise software</h3><p>Practical web platforms, internal tools and AI-assisted workflows shaped by real operating problems.</p></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__number">03</div>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 7 38 15v18L24 41 10 33V15zM10 15l14 8 14-8M24 23v18"/></svg>
+        </div>
+        <div><h3>Brand building</h3><p>Positioning, identity, product storytelling and launch systems designed to turn a good product into a durable brand.</p></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__number">04</div>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 13h32v24H8zM8 16l16 12 16-12M14 33h8"/></svg>
+        </div>
+        <div><h3>Email & social growth</h3><p>Lifecycle strategy, campaigns, content systems and channel management that keep brands useful and visible.</p></div>
+      </article>
+
+      <article class="service-card" data-reveal>
+        <div class="service-card__number">05</div>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 36V24M18 36V16M28 36V22M38 36V9M7 40h34"/></svg>
+        </div>
+        <div><h3>Advertising, online & offline</h3><p>Media planning, creative testing, performance campaigns and grounded measurement across digital and physical channels.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section ventures" id="ventures">
+  <div class="shell">
+    <header class="section-heading section-heading--light" data-reveal>
+      <span class="eyebrow eyebrow--light">Selected ventures</span>
+      <h2>Software built from operations. Brands built for real customers.</h2>
+      <p>Our portfolio is where strategy becomes practice: we launch, learn and improve inside businesses we operate ourselves.</p>
+    </header>
+
+    <div class="venture-grid">
+      <article class="venture-card venture-card--featured" data-reveal>
+        <div class="venture-card__visual venture-card__visual--feedx" aria-hidden="true">
+          <span class="project-mark project-mark--feedx">FX</span>
+          <div class="product-window">
+            <div class="product-window__bar"><i></i><i></i><i></i><span>Commerce automation</span></div>
+            <div class="product-window__body">
+              <span></span><span></span><span></span>
+              <strong>Catalog → content → growth</strong>
+            </div>
+          </div>
+        </div>
+        <div class="venture-card__copy">
+          <span class="project-type">Commerce software</span>
+          <h3>FeedX</h3>
+          <p>A growing family of Shopify tools for social automation, related-product discovery, best-seller merchandising and AI-assisted product content.</p>
+          <ul class="project-chips" aria-label="FeedX products"><li>Social Auto Post</li><li>Smart Related Products</li><li>Best Sellers</li><li>AI Product Studio</li></ul>
+          <a class="text-link text-link--light" href="https://feedx.app/" target="_blank" rel="noopener">Visit FeedX <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="venture-card" data-reveal>
+        <div class="venture-card__visual venture-card__visual--love" aria-hidden="true"><span class="project-mark project-mark--love">ALH</span><i></i><i></i><i></i></div>
+        <div class="venture-card__copy">
+          <span class="project-type">Personalized gifting</span>
+          <h3>All Love Here</h3>
+          <p>Meaningful jewelry, message cards and personalized gifts created for the moments people want to remember.</p>
+          <a class="text-link text-link--light" href="https://alllovehere.com/" target="_blank" rel="noopener">Explore the brand <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="venture-card" data-reveal>
+        <div class="venture-card__visual venture-card__visual--vietnam" aria-hidden="true"><span class="project-mark project-mark--vietnam">VN</span><div class="woven-lines"></div></div>
+        <div class="venture-card__copy">
+          <span class="project-type">Product & supply development</span>
+          <h3>Vietnam market lab</h3>
+          <p>A bridge for Vietnam-made craft, gifting and food products to reach international customers with stronger positioning and operational discipline.</p>
+          <a class="text-link text-link--light" href="#products">See product focus <span aria-hidden="true">↓</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section products" id="products">
+  <div class="shell products__grid">
+    <header class="section-heading section-heading--sticky" data-reveal>
+      <span class="eyebrow">Product focus</span>
+      <h2>Vietnamese capability, shaped for global markets.</h2>
+      <p>We pair local making and sourcing with the product detail, storytelling and market execution international commerce requires.</p>
+    </header>
+
+    <div class="product-list">
+      <article data-reveal>
+        <span class="product-list__index">01</span>
+        <div><h3>Personalized gifts</h3><p>Jewelry, message-led keepsakes and made-to-order products designed around meaningful customer moments.</p></div>
+        <span class="product-list__signal">North America · Australia</span>
+      </article>
+      <article data-reveal>
+        <span class="product-list__index">02</span>
+        <div><h3>Vietnam-made craft</h3><p>Handmade and small-batch products that turn Vietnamese production skill into thoughtful, well-presented global offers.</p></div>
+        <span class="product-list__signal">Made in Vietnam</span>
+      </article>
+      <article data-reveal>
+        <span class="product-list__index">03</span>
+        <div><h3>Vietnam-grown rice</h3><p>Origin-led rice products developed with sourcing, labeling and documentation prepared for applicable U.S. import requirements.</p></div>
+        <span class="product-list__signal">Food category</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section markets" id="markets">
+  <div class="shell">
+    <div class="market-panel">
+      <div class="market-panel__copy" data-reveal>
+        <span class="eyebrow eyebrow--light">Where we operate</span>
+        <h2>Global demand. Vietnamese roots. One operating system.</h2>
+        <p>North America and Australia are active markets. Vietnam is where we are deepening product, talent and go-to-market capability for the next phase.</p>
+        <div class="market-statuses">
+          <div><i class="is-live"></i><span>Active</span><strong>North America</strong></div>
+          <div><i class="is-live"></i><span>Active</span><strong>Australia</strong></div>
+          <div><i class="is-next"></i><span>Expanding</span><strong>Vietnam</strong></div>
+        </div>
+      </div>
+
+      <div class="market-panel__diagram" data-reveal aria-label="Markiee market network">
+        <svg viewBox="0 0 560 440" role="presentation" aria-hidden="true">
+          <path class="market-orbit market-orbit--one" d="M286 76c112 0 202 68 202 153S398 382 286 382 84 314 84 229 174 76 286 76Z"/>
+          <path class="market-orbit market-orbit--two" d="M286 125c75 0 136 46 136 104s-61 104-136 104-136-46-136-104 61-104 136-104Z"/>
+          <path class="market-route" d="M286 229 156 146M286 229l133 91"/>
+          <circle class="market-core" cx="286" cy="229" r="60"/>
+        </svg>
+        <span class="market-label market-label--vn"><b>VN</b><small>Product · talent · growth</small></span>
+        <span class="market-label market-label--na"><b>NA</b><small>Commerce market</small></span>
+        <span class="market-label market-label--au"><b>AU</b><small>Commerce market</small></span>
+      </div>
+    </div>
+
+    <div class="platforms" data-reveal>
+      <div class="platforms__intro"><span>Platforms we work with</span><p>Practical tools in our commerce and creative stack.</p></div>
+      <ul aria-label="Platforms Markiee works with">
+        <li>Shopify</li><li>Amazon</li><li>Wayfair</li><li>ShipStation</li><li>Canva</li>
+      </ul>
+      <p class="platforms__note">All platform names and trademarks belong to their respective owners. No endorsement or affiliation is implied.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="shell about__grid">
+    <div class="founder-card" data-reveal>
+      <div class="founder-card__image"><img src="{{ '/img/team/ngocnt.jpg' | relative_url }}" width="225" height="225" alt="Ngoc Nguyen, Co-Founder and Owner of Markiee"></div>
+      <div class="founder-card__meta"><span>Co-Founder & Owner</span><strong>Ngoc Nguyen</strong><div><a href="{{ site.founder.linkedin }}" target="_blank" rel="noopener">LinkedIn ↗</a><a href="{{ site.founder.github }}" target="_blank" rel="noopener">GitHub ↗</a></div></div>
+    </div>
+
+    <div class="about__copy" data-reveal>
+      <span class="eyebrow">Founder & team</span>
+      <h2>Small by design. Close to the work.</h2>
+      <p class="about__lead">Ngoc Nguyen is a software builder and commerce operator working across SaaS, cloud infrastructure, AI automation, ecommerce and growth.</p>
+      <p>Markiee's five-person core team brings engineering, operations, product, brand and marketing into the same room. That keeps decisions fast, feedback direct and every project connected to a measurable business outcome.</p>
+      <blockquote>“Build what we need. Operate what we build. Learn from the market.”</blockquote>
+      <div class="team-disciplines" aria-label="Core team disciplines"><span>Engineering</span><span>Commerce ops</span><span>Product</span><span>Brand</span><span>Growth</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="shell contact__grid">
+    <div class="contact__copy" data-reveal>
+      <span class="eyebrow eyebrow--light">Start a conversation</span>
+      <h2>Have a product, market or software problem worth solving?</h2>
+      <p>Tell us what you are building, where you want to grow and what is getting in the way.</p>
+      <a href="mailto:{{ site.email }}">{{ site.email }} <span aria-hidden="true">↗</span></a>
+      <address>{{ site.address.street }}<br>{{ site.address.locality }}, {{ site.address.region }} {{ site.address.postal_code }}, {{ site.address.country }}</address>
+    </div>
+
+    <form class="contact-form" method="POST" action="https://formspree.io/f/mwkwgllp" data-reveal>
+      <input type="hidden" name="_subject" value="New inquiry from markiee.co">
+      <label><span>Your name</span><input type="text" name="name" autocomplete="name" required placeholder="How should we address you?"></label>
+      <label><span>Work email</span><input type="email" name="email" autocomplete="email" required placeholder="you@company.com"></label>
+      <label><span>Company or project</span><input type="text" name="company" autocomplete="organization" placeholder="What are you building?"></label>
+      <label><span>How can we help?</span><textarea name="message" rows="5" required placeholder="A short brief is perfect."></textarea></label>
+      <label class="honeypot" aria-hidden="true">Do not fill this field<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+      <button class="button button--accent button--full" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
+      <p>By submitting this form, you agree to our <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>.</p>
+    </form>
+  </div>
+</section>

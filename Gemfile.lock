@@ -56,17 +56,19 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    liquid (4.0.3)
+    liquid (4.0.4)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_portile2 (2.8.9)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.16.2)
-    nokogiri (1.13.6-x86_64-linux)
+    nokogiri (1.13.6)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -85,8 +87,10 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
+    webrick (1.9.2)
 
 PLATFORMS
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES
@@ -99,6 +103,7 @@ DEPENDENCIES
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.3.16

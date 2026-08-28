@@ -1,63 +1,50 @@
-remote_theme: 'raviriley/agency-jekyll-theme'
+title: "Markiee"
+legal_name: "Markiee LLC"
+email: "business@markiee.co"
+description: "Markiee builds and operates cross-border ecommerce brands, practical SaaS products, and growth systems across North America, Australia, and Vietnam."
+url: "https://markiee.co"
+baseurl: ""
+language: "en"
+timezone: "America/Denver"
 
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+founder:
+  name: "Ngoc Nguyen"
+  title: "Co-Founder & Owner"
+  github: "https://github.com/tanngoc93"
+  linkedin: "https://www.linkedin.com/in/tanngoc93"
 
-host: 0.0.0.0
-
-# Site settings
-title:       "MARKIEE LLC"
-email:       "business@markiee.co"
-description: ""
-language:    "en" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
-
-# Team names, titles and social links
-people:
-- name: Ngoc Nguyen
-  pic: ngocnt
-  position: Co-Founder/Owner
-  social:
-    - title: github
-      url: https://github.com/tanngoc93
-    - title: linkedin
-      url: https://www.linkedin.com/in/tanngoc93
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: facebook
-    url: https://www.facebook.com/markiee.company
-  - title: linkedin
-    url: https://www.linkedin.com/company/72009440/
+  linkedin: "https://www.linkedin.com/company/72009440/"
 
-# Postal address (add as many lines as necessary)
 address:
-  - line: 1309 Coffeen Avenue STE 1200
-  - line: Sheridan, WY 82801
-  - line: USA
+  street: "1309 Coffeen Avenue STE 1200"
+  locality: "Sheridan"
+  region: "WY"
+  postal_code: "82801"
+  country: "USA"
 
-# Build settings
-sass:
-  style: compressed
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     disable: true
-include: ['_pages']
-exclude: [vendor, "developer-tools"]
+
 plugins:
-  - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  ignore:
-    envs: [local]
-  blanklines: true
-  startings: [head, body]
+exclude:
+  - vendor
+  - css
+  - favicon.png
+  - img/about
+  - img/logos
+  - img/portfolio
+  - img/header-bg.jpg
+  - img/map-image.png
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md

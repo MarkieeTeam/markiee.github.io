@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms of Use
+description: Terms governing access to the Markiee corporate website and business information.
 permalink: /terms-of-use/
 ---
 

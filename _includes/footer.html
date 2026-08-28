@@ -1,27 +1,32 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li>
-                          <a href="{{ "/privacy-policy/" | prepend: site.baseurl }}">Privacy Policy</a>
-                        </li>
-                        <li>
-                          <a href="{{ "/terms-of-use/" | prepend: site.baseurl }}">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer class="site-footer">
+  <div class="shell site-footer__top">
+    <div class="site-footer__brand">
+      <img src="{{ '/assets/brand/markiee-logo-light.svg' | relative_url }}" width="218" height="48" alt="Markiee">
+      <p>Commerce brands, practical software and growth systems—built across borders.</p>
+    </div>
+
+    <div class="site-footer__nav">
+      <div>
+        <span>Explore</span>
+        <a href="{{ '/#services' | relative_url }}">What we do</a>
+        <a href="{{ '/#ventures' | relative_url }}">Ventures</a>
+        <a href="{{ '/#about' | relative_url }}">About</a>
+      </div>
+      <div>
+        <span>Connect</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+      <div>
+        <span>Legal</span>
+        <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>
+        <a href="{{ '/terms-of-use/' | relative_url }}">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell site-footer__bottom">
+    <span>© <span data-current-year>{{ 'now' | date: '%Y' }}</span> {{ site.legal_name }}</span>
+    <span>{{ site.address.locality }}, {{ site.address.region }} · United States & Vietnam</span>
+  </div>
+</footer>

@@ -1,66 +1,20 @@
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a
-                  href="#page-top"
-                  class="navbar-brand page-scroll"
-                  style="text-transform: uppercase;font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: 700;">
-                  {{site.title}}
-                </a>
-            </div>
+<header class="site-header" data-site-header>
+  <div class="shell site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Markiee home">
+      <img src="{{ '/assets/brand/markiee-logo.svg' | relative_url }}" width="218" height="48" alt="Markiee">
+    </a>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
+      <span class="menu-button__label">Menu</span>
+      <span class="menu-button__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-navigation>
+      <a href="{{ '/#services' | relative_url }}">What we do</a>
+      <a href="{{ '/#ventures' | relative_url }}">Ventures</a>
+      <a href="{{ '/#markets' | relative_url }}">Markets</a>
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a class="nav-cta" href="{{ '/#contact' | relative_url }}">Start a conversation <span aria-hidden="true">↗</span></a>
     </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div
-                  class="intro-lead-in"
-                  style="text-transform: uppercase;font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: 700;"
-                ></div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
+  </div>
+</header>
