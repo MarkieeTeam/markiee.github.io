@@ -1,0 +1,21 @@
+{% assign is_vi = false %}
+{% if page.lang == 'vi' %}{% assign is_vi = true %}{% endif %}
+{% if is_vi %}
+  {% assign language_url = page.alternate_url | default: '/' %}
+  {% assign language_code = 'EN' %}
+  {% assign language_name = 'English' %}
+  {% assign language_label = 'View this page in English' %}
+{% else %}
+  {% assign language_url = page.alternate_url | default: '/vi/' %}
+  {% assign language_code = 'VI' %}
+  {% assign language_name = 'Tiếng Việt' %}
+  {% assign language_label = 'Xem trang này bằng tiếng Việt' %}
+{% endif %}
+
+<a class="language-fab" href="{{ language_url | relative_url }}" hreflang="{% if is_vi %}en{% else %}vi{% endif %}" lang="{% if is_vi %}en{% else %}vi{% endif %}" aria-label="{{ language_label }}" data-tooltip="{{ language_name }}">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="9"></circle>
+    <path d="M3.5 12h17M12 3c2.4 2.45 3.65 5.45 3.65 9S14.4 18.55 12 21M12 3C9.6 5.45 8.35 8.45 8.35 12S9.6 18.55 12 21"></path>
+  </svg>
+  <span>{{ language_code }}</span>
+</a>
