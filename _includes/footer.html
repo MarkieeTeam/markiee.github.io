@@ -1,33 +1,44 @@
+{% assign is_vi = false %}
+{% if page.lang == 'vi' %}{% assign is_vi = true %}{% endif %}
+{% if is_vi %}
+  {% assign footer_home = '/vi/' %}
+  {% assign privacy_url = '/vi/privacy-policy/' %}
+  {% assign terms_url = '/vi/terms-of-use/' %}
+{% else %}
+  {% assign footer_home = '/' %}
+  {% assign privacy_url = '/privacy-policy/' %}
+  {% assign terms_url = '/terms-of-use/' %}
+{% endif %}
 <footer class="site-footer">
   <div class="shell site-footer__top">
     <div class="site-footer__brand">
       <img src="{{ '/assets/brand/markiee-logo-light.svg' | relative_url }}" width="218" height="48" alt="Markiee">
-      <p>Commerce brands, practical software and growth systems—built across borders.</p>
+      <p>{% if is_vi %}Thương hiệu thương mại, phần mềm thực tiễn và hệ thống tăng trưởng—được xây dựng xuyên biên giới.{% else %}Commerce brands, practical software and growth systems—built across borders.{% endif %}</p>
     </div>
 
     <div class="site-footer__nav">
       <div>
-        <span>Explore</span>
-        <a href="{{ '/#services' | relative_url }}">What we do</a>
-        <a href="{{ '/#ventures' | relative_url }}">Ventures</a>
-        <a href="{{ '/#about' | relative_url }}">About</a>
+        <span>{% if is_vi %}Khám phá{% else %}Explore{% endif %}</span>
+        <a href="{{ footer_home | append: '#services' | relative_url }}">{% if is_vi %}Dịch vụ{% else %}What we do{% endif %}</a>
+        <a href="{{ footer_home | append: '#ventures' | relative_url }}">{% if is_vi %}Dự án{% else %}Ventures{% endif %}</a>
+        <a href="{{ footer_home | append: '#about' | relative_url }}">{% if is_vi %}Giới thiệu{% else %}About{% endif %}</a>
       </div>
       <div>
-        <span>Connect</span>
+        <span>{% if is_vi %}Kết nối{% else %}Connect{% endif %}</span>
         <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
         <a href="{{ site.social.facebook }}" target="_blank" rel="noopener">Facebook <span aria-hidden="true">↗</span></a>
       </div>
       <div>
-        <span>Legal</span>
-        <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>
-        <a href="{{ '/terms-of-use/' | relative_url }}">Terms of Use</a>
+        <span>{% if is_vi %}Pháp lý{% else %}Legal{% endif %}</span>
+        <a href="{{ privacy_url | relative_url }}">{% if is_vi %}Chính sách bảo mật{% else %}Privacy Policy{% endif %}</a>
+        <a href="{{ terms_url | relative_url }}">{% if is_vi %}Điều khoản sử dụng{% else %}Terms of Use{% endif %}</a>
       </div>
     </div>
   </div>
 
   <div class="shell site-footer__bottom">
     <span>© <span data-current-year>{{ 'now' | date: '%Y' }}</span> {{ site.legal_name }}</span>
-    <span>{{ site.address.locality }}, {{ site.address.region }} · United States & Vietnam</span>
+    <span>{{ site.address.locality }}, {{ site.address.region }} · {% if is_vi %}Hoa Kỳ & Việt Nam{% else %}United States & Vietnam{% endif %}</span>
   </div>
 </footer>

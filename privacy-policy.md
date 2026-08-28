@@ -1,8 +1,10 @@
 ---
 layout: page
+lang: en
 title: Privacy Policy
 description: How Markiee handles information submitted through this website and business communications.
 permalink: /privacy-policy/
+alternate_url: /vi/privacy-policy/
 ---
 
 **Effective Date:** January 1, 2025

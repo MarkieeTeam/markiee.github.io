@@ -1,8 +1,10 @@
 ---
 layout: page
+lang: en
 title: About Markiee
 description: A U.S.–Vietnam company building commerce brands, practical software and growth systems across borders.
 permalink: /about/
+alternate_url: /vi/about/
 ---
 
 **Markiee LLC was established in the United States in 2021 and is led by Ngoc Nguyen with four employees across the United States and Vietnam.**

@@ -8,9 +8,20 @@
   {% assign page_description = page.description | default: site.description %}
   {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
 
-  <title>{% if page.title %}{{ page_title }} · {{ site.title }}{% else %}{{ site.title }} — Commerce, software and growth across borders{% endif %}</title>
+  <title>{% if page.title %}{{ page_title }} · {{ site.title }}{% elsif page.lang == 'vi' %}{{ site.title }} — Thương mại, phần mềm và tăng trưởng xuyên biên giới{% else %}{{ site.title }} — Commerce, software and growth across borders{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <link rel="canonical" href="{{ canonical_url }}">
+  {% if page.alternate_url %}
+    {% if page.lang == 'vi' %}
+      <link rel="alternate" hreflang="vi" href="{{ canonical_url }}">
+      <link rel="alternate" hreflang="en" href="{{ page.alternate_url | absolute_url }}">
+      <link rel="alternate" hreflang="x-default" href="{{ page.alternate_url | absolute_url }}">
+    {% else %}
+      <link rel="alternate" hreflang="en" href="{{ canonical_url }}">
+      <link rel="alternate" hreflang="vi" href="{{ page.alternate_url | absolute_url }}">
+      <link rel="alternate" hreflang="x-default" href="{{ canonical_url }}">
+    {% endif %}
+  {% endif %}
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.title }}">

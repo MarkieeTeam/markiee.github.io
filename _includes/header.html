@@ -1,20 +1,44 @@
+{% assign is_vi = false %}
+{% if page.lang == 'vi' %}{% assign is_vi = true %}{% endif %}
+{% if is_vi %}
+  {% assign home_url = '/vi/' %}
+  {% assign en_url = page.alternate_url | default: '/' %}
+  {% assign vi_url = page.url %}
+{% else %}
+  {% assign home_url = '/' %}
+  {% assign en_url = page.url %}
+  {% assign vi_url = page.alternate_url | default: '/vi/' %}
+{% endif %}
 <header class="site-header" data-site-header>
   <div class="shell site-header__inner">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Markiee home">
+    <a class="brand" href="{{ home_url | relative_url }}" aria-label="{% if is_vi %}Trang chủ Markiee{% else %}Markiee home{% endif %}">
       <img src="{{ '/assets/brand/markiee-logo.svg' | relative_url }}" width="218" height="48" alt="Markiee">
     </a>
 
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
-      <span class="menu-button__label">Menu</span>
-      <span class="menu-button__icon" aria-hidden="true"><i></i><i></i></span>
-    </button>
+    <div class="site-header__actions">
+      <div class="language-switcher language-switcher--mobile" role="group" aria-label="{% if is_vi %}Chọn ngôn ngữ{% else %}Choose language{% endif %}">
+        <a href="{{ en_url | relative_url }}" lang="en" hreflang="en"{% unless is_vi %} class="is-active" aria-current="page"{% endunless %}>EN</a>
+        <span aria-hidden="true"></span>
+        <a href="{{ vi_url | relative_url }}" lang="vi" hreflang="vi"{% if is_vi %} class="is-active" aria-current="page"{% endif %}>VI</a>
+      </div>
 
-    <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-navigation>
-      <a href="{{ '/#services' | relative_url }}">What we do</a>
-      <a href="{{ '/#ventures' | relative_url }}">Ventures</a>
-      <a href="{{ '/#markets' | relative_url }}">Markets</a>
-      <a href="{{ '/#about' | relative_url }}">About</a>
-      <a class="nav-cta" href="{{ '/#contact' | relative_url }}">Start a conversation <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
+        <span class="menu-button__label">Menu</span>
+        <span class="menu-button__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <nav class="site-navigation" id="site-navigation" aria-label="{% if is_vi %}Điều hướng chính{% else %}Main navigation{% endif %}" data-navigation>
+      <a href="{{ home_url | append: '#services' | relative_url }}">{% if is_vi %}Dịch vụ{% else %}What we do{% endif %}</a>
+      <a href="{{ home_url | append: '#ventures' | relative_url }}">{% if is_vi %}Dự án{% else %}Ventures{% endif %}</a>
+      <a href="{{ home_url | append: '#markets' | relative_url }}">{% if is_vi %}Thị trường{% else %}Markets{% endif %}</a>
+      <a href="{{ home_url | append: '#about' | relative_url }}">{% if is_vi %}Giới thiệu{% else %}About{% endif %}</a>
+      <a class="nav-cta" href="{{ home_url | append: '#contact' | relative_url }}">{% if is_vi %}Bắt đầu trò chuyện{% else %}Start a conversation{% endif %} <span aria-hidden="true">↗</span></a>
+      <div class="language-switcher language-switcher--nav" role="group" aria-label="{% if is_vi %}Chọn ngôn ngữ{% else %}Choose language{% endif %}">
+        <a href="{{ en_url | relative_url }}" lang="en" hreflang="en"{% unless is_vi %} class="is-active" aria-current="page"{% endunless %}>EN</a>
+        <span aria-hidden="true"></span>
+        <a href="{{ vi_url | relative_url }}" lang="vi" hreflang="vi"{% if is_vi %} class="is-active" aria-current="page"{% endif %}>VI</a>
+      </div>
     </nav>
   </div>
 </header>

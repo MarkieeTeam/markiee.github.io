@@ -1,8 +1,10 @@
 ---
 layout: page
+lang: en
 title: Terms of Use
 description: Terms governing access to the Markiee corporate website and business information.
 permalink: /terms-of-use/
+alternate_url: /vi/terms-of-use/
 ---
 
 **Effective Date:** January 1, 2025

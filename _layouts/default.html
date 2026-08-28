@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="{{ site.language | default: 'en' }}">
+<html lang="{{ page.lang | default: site.language | default: 'en' }}">
   {% include head.html %}
   <body class="{{ page.body_class | default: 'site-page' }}">
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content">{% if page.lang == 'vi' %}Đi đến nội dung{% else %}Skip to content{% endif %}</a>
     {% include header.html %}
 
     <main id="main-content">
