@@ -5,7 +5,7 @@ description: A U.S.–Vietnam company building commerce brands, practical softwa
 permalink: /about/
 ---
 
-**Markiee LLC was established in the United States in 2021 and operates with a five-person core team across the United States and Vietnam.**
+**Markiee LLC was established in the United States in 2021 and is led by Ngoc Nguyen with four employees across the United States and Vietnam.**
 
 We build and operate cross-border ecommerce brands, develop practical SaaS products, and lead brand and marketing programs for North America and Australia. Our next chapter is focused on deeper product, talent, and market capability in Vietnam.
 
