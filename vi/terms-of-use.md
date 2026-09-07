@@ -2,14 +2,14 @@
 layout: page
 lang: vi
 title: Điều khoản sử dụng
-description: Các điều khoản điều chỉnh việc truy cập website công ty và thông tin kinh doanh của Markiee.
+description: Các quy định về việc truy cập trang web và sử dụng thông tin kinh doanh của Markiee.
 permalink: /vi/terms-of-use/
 alternate_url: /terms-of-use/
 ---
 
 **Ngày có hiệu lực:** 01 tháng 01 năm 2025
 
-Các Điều khoản sử dụng này ("Điều khoản") điều chỉnh việc bạn truy cập và sử dụng website cùng các dịch vụ do **{{ site.title }}** ("Công ty", "chúng tôi") cung cấp. Khi truy cập hoặc sử dụng Dịch vụ, bạn đồng ý với các Điều khoản này.
+Các Điều khoản sử dụng này ("Điều khoản") quy định việc bạn truy cập và sử dụng trang web cùng các dịch vụ do **{{ site.title }}** ("Công ty", "chúng tôi") cung cấp. Khi truy cập hoặc sử dụng Dịch vụ, bạn đồng ý với các Điều khoản này.
 
 ## Sử dụng Dịch vụ
 
@@ -27,9 +27,9 @@ Toàn bộ nội dung, nhãn hiệu, logo và tài liệu khác trên Dịch v�
 
 Nếu gửi thông tin cho chúng tôi, bao gồm qua biểu mẫu liên hệ, bạn cho phép chúng tôi sử dụng thông tin đó để phản hồi yêu cầu, vận hành và cải thiện Dịch vụ. Bạn cam kết mình có quyền gửi thông tin đó.
 
-## Liên kết của bên thứ ba
+## Liên kết đến trang web của bên thứ ba
 
-Dịch vụ có thể chứa liên kết đến website của bên thứ ba. Chúng tôi không chịu trách nhiệm về nội dung hoặc hoạt động của các website đó và bạn tự chịu rủi ro khi truy cập.
+Dịch vụ có thể chứa liên kết đến trang web của bên thứ ba. Chúng tôi không chịu trách nhiệm về nội dung hoặc hoạt động của các trang web đó. Bạn tự chịu rủi ro khi truy cập các liên kết này.
 
 ## Tuyên bố miễn trừ
 
@@ -37,7 +37,7 @@ Dịch vụ được cung cấp trên cơ sở "nguyên trạng" và "sẵn có"
 
 ## Giới hạn trách nhiệm
 
-Trong phạm vi tối đa pháp luật cho phép, Công ty không chịu trách nhiệm cho bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt, do hậu quả hoặc mang tính trừng phạt nào, cũng như bất kỳ tổn thất lợi nhuận hoặc doanh thu nào phát sinh từ hoặc liên quan đến việc bạn sử dụng Dịch vụ.
+Trong phạm vi tối đa pháp luật cho phép, Công ty không chịu trách nhiệm về bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt, do hậu quả hoặc mang tính trừng phạt nào, cũng như bất kỳ tổn thất lợi nhuận hoặc doanh thu nào phát sinh từ hoặc liên quan đến việc bạn sử dụng Dịch vụ.
 
 ## Bồi thường
 

@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /robots.txt
+sitemap: false
+---
+# Markiee: allow crawling of public pages in both languages and their assets.
+# This includes search engines and AI search crawlers such as Googlebot,
+# bingbot, OAI-SearchBot, Claude-SearchBot and PerplexityBot.
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}

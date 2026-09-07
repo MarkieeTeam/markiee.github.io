@@ -8,7 +8,7 @@
   {% assign page_description = page.description | default: site.description %}
   {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
 
-  <title>{% if page.title %}{{ page_title }} · {{ site.title }}{% elsif page.lang == 'vi' %}{{ site.title }} — Thương mại, phần mềm và tăng trưởng xuyên biên giới{% else %}{{ site.title }} — Commerce, software and growth across borders{% endif %}</title>
+  <title>{% if page.title %}{{ page_title }} · {{ site.title }}{% elsif page.lang == 'vi' %}{{ site.title }} — Thương mại điện tử và phần mềm cho thị trường quốc tế{% else %}{{ site.title }} — Commerce, software and growth across borders{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <link rel="canonical" href="{{ canonical_url }}">
   {% if page.alternate_url %}

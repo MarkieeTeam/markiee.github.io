@@ -2,22 +2,22 @@
 layout: page
 lang: vi
 title: Chính sách bảo mật
-description: Cách Markiee xử lý thông tin được gửi qua website và trong các trao đổi kinh doanh.
+description: Cách Markiee xử lý thông tin bạn cung cấp qua trang web và khi trao đổi công việc với chúng tôi.
 permalink: /vi/privacy-policy/
 alternate_url: /privacy-policy/
 ---
 
 **Ngày có hiệu lực:** 01 tháng 01 năm 2025
 
-Chính sách bảo mật này giải thích cách **{{ site.title }}** ("Công ty", "chúng tôi") thu thập, sử dụng, chia sẻ và bảo vệ thông tin khi bạn truy cập website hoặc tương tác với các dịch vụ của chúng tôi ("Dịch vụ"). Chính sách này dành cho người dùng tại Hoa Kỳ và trên toàn thế giới.
+Chính sách bảo mật này giải thích cách **{{ site.title }}** ("Công ty", "chúng tôi") thu thập, sử dụng, chia sẻ và bảo vệ thông tin khi bạn truy cập trang web hoặc tương tác với các dịch vụ của chúng tôi ("Dịch vụ"). Chính sách này dành cho người dùng tại Hoa Kỳ và trên toàn thế giới.
 
 ## Thông tin chúng tôi thu thập
 
 Chúng tôi thu thập thông tin theo các cách sau:
 
 - **Thông tin bạn cung cấp:** như tên, địa chỉ email, số điện thoại, tên công ty và mọi thông tin bạn gửi qua biểu mẫu liên hệ hoặc email.
-- **Thông tin tự động:** như địa chỉ IP, loại trình duyệt, mã định danh thiết bị, các trang đã truy cập, thời gian sử dụng và URL giới thiệu. Thông tin này được thu thập qua cookie và các công nghệ tương tự.
-- **Trao đổi:** nội dung tin nhắn, yêu cầu và tương tác hỗ trợ.
+- **Thông tin được thu thập tự động:** như địa chỉ IP, loại trình duyệt, mã định danh thiết bị, các trang đã truy cập, thời gian sử dụng và địa chỉ trang web đã dẫn bạn đến với chúng tôi. Thông tin này được thu thập qua cookie và các công nghệ tương tự.
+- **Nội dung trao đổi:** tin nhắn, yêu cầu và lịch sử trao đổi khi hỗ trợ bạn.
 
 ## Cách chúng tôi sử dụng thông tin
 
@@ -26,7 +26,7 @@ Chúng tôi sử dụng thông tin để:
 - Cung cấp, vận hành và cải thiện Dịch vụ.
 - Phản hồi yêu cầu và hỗ trợ khách hàng.
 - Gửi các thông báo liên quan đến Dịch vụ.
-- Hiểu xu hướng sử dụng và cải thiện trải nghiệm website.
+- Tìm hiểu cách người dùng sử dụng Dịch vụ và cải thiện trải nghiệm trên trang web.
 - Tuân thủ nghĩa vụ pháp lý và thực thi các điều khoản của chúng tôi.
 
 ## Cookie và các công nghệ tương tự
@@ -37,11 +37,11 @@ Chúng tôi sử dụng cookie và các công nghệ tương tự để phân t�
 
 Chúng tôi không bán thông tin cá nhân của bạn. Chúng tôi có thể chia sẻ thông tin:
 
-- **Với nhà cung cấp dịch vụ** hỗ trợ chúng tôi vận hành Dịch vụ, như hosting, phân tích và truyền thông.
+- **Với nhà cung cấp dịch vụ** hỗ trợ chúng tôi vận hành Dịch vụ, như lưu trữ trang web, phân tích dữ liệu và liên lạc.
 - **Vì lý do pháp lý** để tuân thủ pháp luật, phản hồi yêu cầu hợp pháp hoặc bảo vệ quyền và sự an toàn.
 - **Với sự đồng ý của bạn** hoặc theo chỉ dẫn của bạn.
 
-## Chuyển dữ liệu quốc tế
+## Chuyển dữ liệu ra nước ngoài
 
 Nếu bạn truy cập Dịch vụ từ bên ngoài Hoa Kỳ, thông tin của bạn có thể được chuyển đến, lưu trữ và xử lý tại Hoa Kỳ hoặc các quốc gia khác nơi chúng tôi hoặc nhà cung cấp dịch vụ hoạt động. Chúng tôi áp dụng các biện pháp bảo vệ phù hợp cho việc chuyển dữ liệu quốc tế theo yêu cầu của pháp luật.
 
@@ -61,7 +61,7 @@ Tùy theo nơi bạn sinh sống, bạn có thể có quyền truy cập, chỉn
 
 Cư dân California có thể có các quyền theo Đạo luật Quyền riêng tư Người tiêu dùng California (CCPA/CPRA), như quyền được biết, xóa và chỉnh sửa thông tin cá nhân, cũng như quyền từ chối việc bán hoặc chia sẻ thông tin cá nhân nếu áp dụng. Chúng tôi không bán hoặc chia sẻ thông tin cá nhân cho quảng cáo hành vi xuyên ngữ cảnh.
 
-### EEA, Vương quốc Anh và Thụy Sĩ
+### Khu vực Kinh tế Châu Âu, Vương quốc Anh và Thụy Sĩ
 
 Nếu bạn ở Khu vực Kinh tế Châu Âu, Vương quốc Anh hoặc Thụy Sĩ, bạn có thể có các quyền theo GDPR, bao gồm quyền truy cập, chỉnh sửa, xóa, hạn chế, di chuyển dữ liệu và phản đối. Bạn cũng có quyền khiếu nại với cơ quan bảo vệ dữ liệu tại địa phương.
 

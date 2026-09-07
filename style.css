@@ -2222,6 +2222,25 @@ textarea:focus-visible {
   }
 }
 
+@media (max-width: 380px) {
+  html[lang="vi"] .site-header__actions {
+    gap: 8px;
+  }
+
+  html[lang="vi"] .menu-button__label {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  html[lang="vi"] .platform-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

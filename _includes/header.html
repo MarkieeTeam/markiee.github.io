@@ -33,7 +33,7 @@
       <a href="{{ home_url | append: '#ventures' | relative_url }}">{% if is_vi %}Dự án{% else %}Ventures{% endif %}</a>
       <a href="{{ home_url | append: '#markets' | relative_url }}">{% if is_vi %}Thị trường{% else %}Markets{% endif %}</a>
       <a href="{{ home_url | append: '#about' | relative_url }}">{% if is_vi %}Giới thiệu{% else %}About{% endif %}</a>
-      <a class="nav-cta" href="{{ home_url | append: '#contact' | relative_url }}">{% if is_vi %}Bắt đầu trò chuyện{% else %}Start a conversation{% endif %} <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="{{ home_url | append: '#contact' | relative_url }}">{% if is_vi %}Liên hệ với chúng tôi{% else %}Start a conversation{% endif %} <span aria-hidden="true">↗</span></a>
       <div class="language-switcher language-switcher--nav" role="group" aria-label="{% if is_vi %}Chọn ngôn ngữ{% else %}Choose language{% endif %}">
         <a href="{{ en_url | relative_url }}" lang="en" hreflang="en"{% unless is_vi %} class="is-active" aria-current="page"{% endunless %}>EN</a>
         <span aria-hidden="true"></span>
