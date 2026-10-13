@@ -3,7 +3,7 @@ layout: default
 body_class: home-page
 lang: vi
 alternate_url: /
-description: "Markiee được thành lập tại Hoa Kỳ và vận hành từ Việt Nam, phát triển thương hiệu thương mại điện tử, phần mềm và giải pháp tiếp thị cho thị trường Bắc Mỹ và Úc."
+description: "Markiee tư vấn thương mại điện tử tại Việt Nam và Mỹ: chiến lược, gian hàng và vận hành trên Shopify, Amazon, Etsy, Wayfair và Walmart, cùng phần mềm và giải pháp tiếp thị."
 permalink: /vi/
 ---
 
@@ -12,13 +12,16 @@ permalink: /vi/
   <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
   <div class="shell hero__grid">
     <div class="hero__copy" data-reveal>
-      <span class="eyebrow eyebrow--light"><i aria-hidden="true"></i> Thành lập tại Hoa Kỳ · Vận hành từ Việt Nam</span>
-      <h1 id="hero-heading">Chúng tôi xây dựng <em>thương hiệu</em> và phần mềm cho thị trường quốc tế.</h1>
-      <p>Với đội ngũ tinh gọn, Markiee phát triển sản phẩm, vận hành thương mại điện tử, xây dựng phần mềm và triển khai tiếp thị cho thị trường Bắc Mỹ và Úc. Việt Nam là thị trường chúng tôi đang hướng đến trong giai đoạn tiếp theo.</p>
+      <span class="eyebrow eyebrow--light"><i aria-hidden="true"></i> Thương mại điện tử · Phần mềm · Tăng trưởng</span>
+      <h1 id="hero-heading">Xây thương hiệu. Bán hàng tại <em>Việt Nam và Mỹ.</em></h1>
+      <p>Markiee kết hợp kinh nghiệm vận hành thương hiệu, phát triển phần mềm và tư vấn thương mại điện tử để giúp doanh nghiệp chọn đúng kênh, hoàn thiện gian hàng và xây dựng hệ thống tăng trưởng.</p>
       <div class="hero__actions">
-        <a class="button button--accent" href="#ventures">Khám phá dự án <span aria-hidden="true">↓</span></a>
-        <a class="button button--ghost" href="#contact">Liên hệ với chúng tôi <span aria-hidden="true">↗</span></a>
+        <a class="button button--accent" href="#consulting">Khám phá dịch vụ tư vấn <span aria-hidden="true">↓</span></a>
+        <a class="button button--ghost" href="#ventures">Xem các thương hiệu <span aria-hidden="true">↗</span></a>
       </div>
+      <ul class="hero__channels" aria-label="Các sàn thương mại điện tử trong phạm vi tư vấn">
+        <li>Amazon</li><li>Etsy</li><li>Wayfair</li><li>Walmart</li>
+      </ul>
       <div class="hero__principles" aria-label="Cách Markiee vận hành">
         <span><b>01</b> Xây dựng</span>
         <span><b>02</b> Vận hành</span>
@@ -28,8 +31,8 @@ permalink: /vi/
 
     <div class="hero-console" data-reveal>
       <div class="hero-console__top">
-        <div><span class="status-dot" aria-hidden="true"></span> Mạng lưới hoạt động</div>
-        <span>MARKIEE / 2026</span>
+        <div><span class="status-dot" aria-hidden="true"></span> Việt Nam ↔ Mỹ</div>
+        <span>MARKIEE / {{ 'now' | date: '%Y' }}</span>
       </div>
       <div class="route-map" aria-label="Markiee hoạt động giữa Việt Nam, Bắc Mỹ và Úc">
         <svg viewBox="0 0 600 330" role="presentation" aria-hidden="true">
@@ -52,7 +55,7 @@ permalink: /vi/
       </div>
       <div class="hero-console__bottom">
         <div><span>Mô hình vận hành</span><strong>Thương mại × Phần mềm × Tăng trưởng</strong></div>
-        <div class="console-team"><span aria-hidden="true">M</span><span aria-hidden="true">K</span><span aria-hidden="true">+</span><b>Nhà sáng lập điều hành · 4 nhân viên</b></div>
+        <div class="console-team"><span aria-hidden="true">M</span><span aria-hidden="true">K</span><span aria-hidden="true">+</span><b>Nhà sáng lập + 4 nhân viên</b></div>
       </div>
     </div>
   </div>
@@ -80,8 +83,8 @@ permalink: /vi/
         <div class="service-card__icon" aria-hidden="true">
           <svg viewBox="0 0 48 48"><path d="M8 15h32v23H8zM14 15V9h20v6M8 23h32M18 29h12"/></svg>
         </div>
-        <div><h3>Thương mại điện tử xuyên biên giới</h3><p>Quản lý cửa hàng và gian hàng trên Shopify, Amazon và Wayfair, từ hoàn thiện danh mục sản phẩm đến xử lý đơn hàng, giao hàng và vận hành hằng ngày.</p></div>
-        <span class="service-card__tag">Cửa hàng trực tuyến · Sàn thương mại điện tử · Vận hành</span>
+        <div><h3>Tư vấn & vận hành thương mại điện tử</h3><p>Tư vấn bán hàng trong nước và tại Mỹ: chọn kênh phù hợp, xây dựng cửa hàng Shopify, chuẩn bị gian hàng Amazon, Etsy, Wayfair và Walmart, hoàn thiện danh mục sản phẩm và quy trình vận hành.</p></div>
+        <span class="service-card__tag">Chiến lược · Gian hàng · Vận hành</span>
       </article>
 
       <article class="service-card" data-reveal>
@@ -119,6 +122,8 @@ permalink: /vi/
   </div>
 </section>
 
+{% include consulting.html %}
+
 <section class="section ventures" id="ventures">
   <div class="shell">
     <header class="section-heading section-heading--light" data-reveal>
@@ -130,7 +135,7 @@ permalink: /vi/
     <div class="venture-grid">
       <article class="venture-card venture-card--featured" data-reveal>
         <div class="venture-card__visual venture-card__visual--feedx" aria-hidden="true">
-          <span class="project-mark project-mark--feedx">FX</span>
+          <span class="project-mark project-mark--feedx"><img src="{{ '/assets/brand/feedx-mark.svg' | relative_url }}" width="38" height="38" alt="" loading="lazy"></span>
           <div class="product-window">
             <div class="product-window__bar"><i></i><i></i><i></i><span>Tự động hóa thương mại</span></div>
             <div class="product-window__body">
@@ -149,7 +154,7 @@ permalink: /vi/
       </article>
 
       <article class="venture-card" data-reveal>
-        <div class="venture-card__visual venture-card__visual--love" aria-hidden="true"><span class="project-mark project-mark--love">ALH</span><i></i><i></i><i></i></div>
+        <div class="venture-card__visual venture-card__visual--love" aria-hidden="true"><span class="project-mark project-mark--love"><img src="{{ '/assets/brand/alllovehere-mark.jpg' | relative_url }}" width="512" height="512" alt="" loading="lazy"></span><i></i><i></i><i></i></div>
         <div class="venture-card__copy">
           <span class="project-type">Quà tặng cá nhân hóa</span>
           <h3>All Love Here</h3>
@@ -230,10 +235,10 @@ permalink: /vi/
       <header class="platforms__header">
         <div class="platforms__intro">
           <span>Bộ công cụ vận hành</span>
-          <h3>Các nền tảng chúng tôi sử dụng</h3>
+          <h3>Các nền tảng cho bán hàng & vận hành</h3>
         </div>
-        <p>Các công cụ hỗ trợ bán hàng, thanh toán, chăm sóc khách hàng, quảng cáo, sáng tạo nội dung và vận hành hạ tầng.</p>
-        <strong>18+ công cụ</strong>
+        <p>Các sàn trong phạm vi tư vấn cùng những công cụ hỗ trợ bán hàng, thanh toán, chăm sóc khách hàng, quảng cáo, sáng tạo nội dung và vận hành hạ tầng.</p>
+        <strong>24 công cụ</strong>
       </header>
 
       <div class="platform-groups">
@@ -243,9 +248,11 @@ permalink: /vi/
             <li><a class="platform-card" href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:shopify"></iconify-icon></span><span>Shopify</span></a></li>
             <li><a class="platform-card" href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:paypal"></iconify-icon></span><span>PayPal</span></a></li>
             <li><a class="platform-card" href="https://stripe.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:stripe"></iconify-icon></span><span>Stripe</span></a></li>
-            <li><a class="platform-card" href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:amazon"></iconify-icon></span><span>Amazon</span></a></li>
+            <li><a class="platform-card" href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/amazon.svg' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Amazon</span></a></li>
             <li><a class="platform-card" href="https://www.shipstation.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="mdi:truck-fast-outline"></iconify-icon></span><span>ShipStation</span></a></li>
-            <li><a class="platform-card" href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:etsy"></iconify-icon></span><span>Etsy</span></a></li>
+            <li><a class="platform-card" href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/etsy.svg' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Etsy</span></a></li>
+            <li><a class="platform-card" href="https://sell.wayfair.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/wayfair-mark.png' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Wayfair</span></a></li>
+            <li><a class="platform-card" href="https://marketplace.walmart.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/walmart.svg' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Walmart</span></a></li>
           </ul>
         </section>
 
@@ -258,6 +265,8 @@ permalink: /vi/
             <li><a class="platform-card" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:tiktok"></iconify-icon></span><span>TikTok</span></a></li>
             <li><a class="platform-card" href="https://ads.google.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:googleads"></iconify-icon></span><span>Google Ads</span></a></li>
             <li><a class="platform-card" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:pinterest"></iconify-icon></span><span>Pinterest</span></a></li>
+            <li><a class="platform-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:youtube"></iconify-icon></span><span>YouTube</span></a></li>
+            <li><a class="platform-card" href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:googleanalytics"></iconify-icon></span><span>Google Analytics</span></a></li>
           </ul>
         </section>
 
@@ -270,6 +279,8 @@ permalink: /vi/
             <li><a class="platform-card" href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:cloudflare"></iconify-icon></span><span>Cloudflare</span></a></li>
             <li><a class="platform-card" href="https://www.vultr.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:vultr"></iconify-icon></span><span>Vultr</span></a></li>
             <li><a class="platform-card" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:github"></iconify-icon></span><span>GitHub</span></a></li>
+            <li><a class="platform-card" href="https://www.remotion.dev/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/remotion.png' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Remotion</span></a></li>
+            <li><a class="platform-card" href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:docker"></iconify-icon></span><span>Docker</span></a></li>
           </ul>
         </section>
       </div>
@@ -301,8 +312,8 @@ permalink: /vi/
   <div class="shell contact__grid">
     <div class="contact__copy" data-reveal>
       <span class="eyebrow eyebrow--light">Liên hệ với chúng tôi</span>
-      <h2>Bạn cần phát triển sản phẩm, mở rộng thị trường hay xây dựng phần mềm?</h2>
-      <p>Hãy chia sẻ về dự án, mục tiêu và những khó khăn bạn đang gặp. Chúng tôi sẽ cùng bạn trao đổi hướng giải quyết.</p>
+      <h2>Bạn muốn bắt đầu hoặc phát triển bán hàng tại Việt Nam và Mỹ?</h2>
+      <p>Chia sẻ sản phẩm, thị trường mục tiêu và nhu cầu trên Shopify, Amazon, Etsy, Wayfair hoặc Walmart. Chúng tôi sẽ cùng bạn xác định hướng đi, các bước chuẩn bị và hệ thống vận hành phù hợp.</p>
       <a href="mailto:{{ site.email }}">{{ site.email }} <span aria-hidden="true">↗</span></a>
       <address>{{ site.address.street }}<br>{{ site.address.locality }}, {{ site.address.region }} {{ site.address.postal_code }}, {{ site.address.country }}</address>
     </div>
@@ -312,7 +323,7 @@ permalink: /vi/
       <label><span>Họ và tên</span><input type="text" name="name" autocomplete="name" required placeholder="Nhập họ và tên của bạn"></label>
       <label><span>Email công việc</span><input type="email" name="email" autocomplete="email" required placeholder="ban@congty.com"></label>
       <label><span>Công ty hoặc dự án</span><input type="text" name="company" autocomplete="organization" placeholder="Tên công ty hoặc dự án của bạn"></label>
-      <label><span>Bạn cần hỗ trợ gì?</span><textarea name="message" rows="5" required placeholder="Mô tả ngắn về nhu cầu hoặc vấn đề bạn muốn giải quyết."></textarea></label>
+      <label><span>Bạn cần hỗ trợ gì?</span><textarea name="message" rows="5" required placeholder="Bạn bán sản phẩm gì, hướng đến Việt Nam hay Mỹ, và cần hỗ trợ trên Shopify, Amazon, Etsy, Wayfair hoặc Walmart?"></textarea></label>
       <label class="honeypot" aria-hidden="true">Không điền vào trường này<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
       <button class="button button--accent button--full" type="submit">Gửi yêu cầu <span aria-hidden="true">↗</span></button>
       <p>Khi gửi biểu mẫu, bạn đồng ý với <a href="{{ '/vi/privacy-policy/' | relative_url }}">Chính sách bảo mật</a> của chúng tôi.</p>

@@ -3,7 +3,7 @@ layout: default
 body_class: home-page
 lang: en
 alternate_url: /vi/
-description: "Markiee is a U.S.–Vietnam commerce and software company building ecommerce brands, SaaS products, and growth systems for North America and Australia."
+description: "Markiee provides ecommerce consulting for Vietnam and the U.S., including Amazon, Etsy, Wayfair, Walmart and Shopify, alongside brand building and practical software."
 ---
 
 <section class="hero" aria-labelledby="hero-heading">
@@ -11,13 +11,14 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
   <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
   <div class="shell hero__grid">
     <div class="hero__copy" data-reveal>
-      <span class="eyebrow eyebrow--light"><i aria-hidden="true"></i> U.S. founded · Vietnam powered</span>
-      <h1 id="hero-heading">We build commerce <em>brands</em> and software that cross borders.</h1>
-      <p>Markiee is a lean operating company connecting product development, ecommerce, software, brand and marketing execution across North America and Australia—with Vietnam as our next growth market.</p>
+      <span class="eyebrow eyebrow--light"><i aria-hidden="true"></i> Commerce · Software · Growth</span>
+      <h1 id="hero-heading">Build your brand.<br>Grow in <em>Vietnam & the U.S.</em></h1>
+      <p>We bring hands-on brand operations, ecommerce consulting and practical software together—helping businesses choose the right channels, improve their stores and build a path to growth.</p>
       <div class="hero__actions">
-        <a class="button button--accent" href="#ventures">Explore our work <span aria-hidden="true">↓</span></a>
-        <a class="button button--ghost" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        <a class="button button--accent" href="#consulting">Explore consulting <span aria-hidden="true">↓</span></a>
+        <a class="button button--ghost" href="#ventures">Meet our brands <span aria-hidden="true">↗</span></a>
       </div>
+      <ul class="hero__channels" aria-label="Marketplace consulting"><li>Amazon</li><li>Etsy</li><li>Wayfair</li><li>Walmart</li></ul>
       <div class="hero__principles" aria-label="How Markiee operates">
         <span><b>01</b> Build</span>
         <span><b>02</b> Operate</span>
@@ -27,8 +28,8 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
 
     <div class="hero-console" data-reveal>
       <div class="hero-console__top">
-        <div><span class="status-dot" aria-hidden="true"></span> Live operating view</div>
-        <span>MARKIEE / 2026</span>
+        <div><span class="status-dot" aria-hidden="true"></span> Vietnam ↔ U.S.</div>
+        <span>MARKIEE / {{ 'now' | date: '%Y' }}</span>
       </div>
       <div class="route-map" aria-label="Markiee operates between Vietnam, North America, and Australia">
         <svg viewBox="0 0 600 330" role="presentation" aria-hidden="true">
@@ -51,7 +52,7 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
       </div>
       <div class="hero-console__bottom">
         <div><span>Operating model</span><strong>Commerce × Software × Growth</strong></div>
-        <div class="console-team"><span aria-hidden="true">M</span><span aria-hidden="true">K</span><span aria-hidden="true">+</span><b>Founder-led · 4-person team</b></div>
+        <div class="console-team"><span aria-hidden="true">M</span><span aria-hidden="true">K</span><span aria-hidden="true">+</span><b>Founder + 4 employees</b></div>
       </div>
     </div>
   </div>
@@ -79,8 +80,8 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
         <div class="service-card__icon" aria-hidden="true">
           <svg viewBox="0 0 48 48"><path d="M8 15h32v23H8zM14 15V9h20v6M8 23h32M18 29h12"/></svg>
         </div>
-        <div><h3>Cross-border ecommerce</h3><p>Storefront, marketplace and fulfillment operations across Shopify, Amazon and Wayfair—from catalog readiness to day-to-day execution.</p></div>
-        <span class="service-card__tag">Websites · marketplaces · operations</span>
+        <div><h3>Ecommerce consulting & operations</h3><p>Practical guidance for selling in Vietnam and the U.S.—from Shopify stores to Amazon, Etsy, Wayfair and Walmart marketplace readiness, catalog and daily operations.</p></div>
+        <span class="service-card__tag">Strategy · Storefronts · Operations</span>
       </article>
 
       <article class="service-card" data-reveal>
@@ -118,6 +119,8 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
   </div>
 </section>
 
+{% include consulting.html %}
+
 <section class="section ventures" id="ventures">
   <div class="shell">
     <header class="section-heading section-heading--light" data-reveal>
@@ -129,7 +132,7 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
     <div class="venture-grid">
       <article class="venture-card venture-card--featured" data-reveal>
         <div class="venture-card__visual venture-card__visual--feedx" aria-hidden="true">
-          <span class="project-mark project-mark--feedx">FX</span>
+          <span class="project-mark project-mark--feedx"><img src="{{ '/assets/brand/feedx-mark.svg' | relative_url }}" width="38" height="38" alt="" loading="lazy"></span>
           <div class="product-window">
             <div class="product-window__bar"><i></i><i></i><i></i><span>Commerce automation</span></div>
             <div class="product-window__body">
@@ -148,7 +151,7 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
       </article>
 
       <article class="venture-card" data-reveal>
-        <div class="venture-card__visual venture-card__visual--love" aria-hidden="true"><span class="project-mark project-mark--love">ALH</span><i></i><i></i><i></i></div>
+        <div class="venture-card__visual venture-card__visual--love" aria-hidden="true"><span class="project-mark project-mark--love"><img src="{{ '/assets/brand/alllovehere-mark.jpg' | relative_url }}" width="512" height="512" alt="" loading="lazy"></span><i></i><i></i><i></i></div>
         <div class="venture-card__copy">
           <span class="project-type">Personalized gifting</span>
           <h3>All Love Here</h3>
@@ -229,10 +232,10 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
       <header class="platforms__header">
         <div class="platforms__intro">
           <span>Our operating stack</span>
-          <h3>Platforms we work with</h3>
+          <h3>Platforms for commerce & operations</h3>
         </div>
         <p>A focused stack for commerce, retention, paid growth and AI-assisted delivery.</p>
-        <strong>18+ tools</strong>
+        <strong>24 tools</strong>
       </header>
 
       <div class="platform-groups">
@@ -242,9 +245,11 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
             <li><a class="platform-card" href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:shopify"></iconify-icon></span><span>Shopify</span></a></li>
             <li><a class="platform-card" href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:paypal"></iconify-icon></span><span>PayPal</span></a></li>
             <li><a class="platform-card" href="https://stripe.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:stripe"></iconify-icon></span><span>Stripe</span></a></li>
-            <li><a class="platform-card" href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:amazon"></iconify-icon></span><span>Amazon</span></a></li>
+            <li><a class="platform-card" href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/amazon.svg' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Amazon</span></a></li>
             <li><a class="platform-card" href="https://www.shipstation.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="mdi:truck-fast-outline"></iconify-icon></span><span>ShipStation</span></a></li>
-            <li><a class="platform-card" href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:etsy"></iconify-icon></span><span>Etsy</span></a></li>
+            <li><a class="platform-card" href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/etsy.svg' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Etsy</span></a></li>
+            <li><a class="platform-card" href="https://sell.wayfair.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/wayfair-mark.png' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Wayfair</span></a></li>
+            <li><a class="platform-card" href="https://marketplace.walmart.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/walmart.svg' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Walmart</span></a></li>
           </ul>
         </section>
 
@@ -257,6 +262,8 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
             <li><a class="platform-card" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:tiktok"></iconify-icon></span><span>TikTok</span></a></li>
             <li><a class="platform-card" href="https://ads.google.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:googleads"></iconify-icon></span><span>Google Ads</span></a></li>
             <li><a class="platform-card" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:pinterest"></iconify-icon></span><span>Pinterest</span></a></li>
+            <li><a class="platform-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:youtube"></iconify-icon></span><span>YouTube</span></a></li>
+            <li><a class="platform-card" href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:googleanalytics"></iconify-icon></span><span>Google Analytics</span></a></li>
           </ul>
         </section>
 
@@ -269,6 +276,8 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
             <li><a class="platform-card" href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:cloudflare"></iconify-icon></span><span>Cloudflare</span></a></li>
             <li><a class="platform-card" href="https://www.vultr.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:vultr"></iconify-icon></span><span>Vultr</span></a></li>
             <li><a class="platform-card" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:github"></iconify-icon></span><span>GitHub</span></a></li>
+            <li><a class="platform-card" href="https://www.remotion.dev/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><img src="{{ '/assets/brand/platforms/remotion.png' | relative_url }}" width="28" height="28" alt="" loading="lazy"></span><span>Remotion</span></a></li>
+            <li><a class="platform-card" href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><span class="platform-card__icon" aria-hidden="true"><iconify-icon icon="simple-icons:docker"></iconify-icon></span><span>Docker</span></a></li>
           </ul>
         </section>
       </div>
@@ -300,8 +309,8 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
   <div class="shell contact__grid">
     <div class="contact__copy" data-reveal>
       <span class="eyebrow eyebrow--light">Start a conversation</span>
-      <h2>Have a product, market or software problem worth solving?</h2>
-      <p>Tell us what you are building, where you want to grow and what is getting in the way.</p>
+      <h2>Ready for your next market?</h2>
+      <p>Tell us about your products, your current channels and your goals in Vietnam or the U.S. We can help shape your ecommerce strategy, store operations or software needs.</p>
       <a href="mailto:{{ site.email }}">{{ site.email }} <span aria-hidden="true">↗</span></a>
       <address>{{ site.address.street }}<br>{{ site.address.locality }}, {{ site.address.region }} {{ site.address.postal_code }}, {{ site.address.country }}</address>
     </div>
@@ -311,7 +320,7 @@ description: "Markiee is a U.S.–Vietnam commerce and software company building
       <label><span>Your name</span><input type="text" name="name" autocomplete="name" required placeholder="How should we address you?"></label>
       <label><span>Work email</span><input type="email" name="email" autocomplete="email" required placeholder="you@company.com"></label>
       <label><span>Company or project</span><input type="text" name="company" autocomplete="organization" placeholder="What are you building?"></label>
-      <label><span>How can we help?</span><textarea name="message" rows="5" required placeholder="A short brief is perfect."></textarea></label>
+      <label><span>How can we help?</span><textarea name="message" rows="5" required placeholder="Your products, target market (Vietnam / U.S.), channels and current challenges."></textarea></label>
       <label class="honeypot" aria-hidden="true">Do not fill this field<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
       <button class="button button--accent button--full" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
       <p>By submitting this form, you agree to our <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>.</p>

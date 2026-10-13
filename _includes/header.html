@@ -31,7 +31,7 @@
     <nav class="site-navigation" id="site-navigation" aria-label="{% if is_vi %}Điều hướng chính{% else %}Main navigation{% endif %}" data-navigation>
       <a href="{{ home_url | append: '#services' | relative_url }}">{% if is_vi %}Dịch vụ{% else %}What we do{% endif %}</a>
       <a href="{{ home_url | append: '#ventures' | relative_url }}">{% if is_vi %}Dự án{% else %}Ventures{% endif %}</a>
-      <a href="{{ home_url | append: '#markets' | relative_url }}">{% if is_vi %}Thị trường{% else %}Markets{% endif %}</a>
+      <a href="{{ home_url | append: '#consulting' | relative_url }}">{% if is_vi %}Tư vấn TMĐT{% else %}Consulting{% endif %}</a>
       <a href="{{ home_url | append: '#about' | relative_url }}">{% if is_vi %}Giới thiệu{% else %}About{% endif %}</a>
       <a class="nav-cta" href="{{ home_url | append: '#contact' | relative_url }}">{% if is_vi %}Liên hệ với chúng tôi{% else %}Start a conversation{% endif %} <span aria-hidden="true">↗</span></a>
       <div class="language-switcher language-switcher--nav" role="group" aria-label="{% if is_vi %}Chọn ngôn ngữ{% else %}Choose language{% endif %}">

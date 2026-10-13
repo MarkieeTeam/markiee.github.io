@@ -20,6 +20,7 @@
       <div>
         <span>{% if is_vi %}Khám phá{% else %}Explore{% endif %}</span>
         <a href="{{ footer_home | append: '#services' | relative_url }}">{% if is_vi %}Dịch vụ{% else %}What we do{% endif %}</a>
+        <a href="{{ footer_home | append: '#consulting' | relative_url }}">{% if is_vi %}Tư vấn thương mại điện tử{% else %}Ecommerce consulting{% endif %}</a>
         <a href="{{ footer_home | append: '#ventures' | relative_url }}">{% if is_vi %}Dự án{% else %}Ventures{% endif %}</a>
         <a href="{{ footer_home | append: '#about' | relative_url }}">{% if is_vi %}Giới thiệu{% else %}About{% endif %}</a>
       </div>

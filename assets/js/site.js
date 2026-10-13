@@ -31,7 +31,7 @@
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 820) closeMenu();
+    if (window.innerWidth > 980) closeMenu();
   });
 
   window.addEventListener("scroll", updateHeader, { passive: true });
